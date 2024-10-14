@@ -56,8 +56,8 @@ app.post('/create-checkout-session', async(req, res) => {
             payment_method_types: ['card'],
             line_items,
             mode: 'payment',
-            success_url: "https://mellow-medovik-b82816.netlify.app/success",
-            cancel_url: "https://mellow-medovik-b82816.netlify.app/cancel",
+            success_url: 'https://vishnu-foodapp.netlify.app/success',
+            cancel_url: "https://vishnu-foodapp.netlify.app/cancel",
         });
         res.json({id: session.id});
     } catch(error){
